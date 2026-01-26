@@ -1,0 +1,27 @@
+plugins {
+    id 'java'                        // Java 插件
+    id 'application'                 // 如果以后想有 main 方法运行
+}
+
+group = 'com.minilab'     // 项目 groupId
+version = '1.0.0'                   // 版本
+
+sourceCompatibility = '1.8'           // Java 版本，可改成 8/11/17
+targetCompatibility = '1.8'
+
+repositories {
+    mavenCentral()                   // 使用 Maven 中央仓库
+}
+
+dependencies {
+    // JUnit 5 单元测试
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+
+}
+
+test {
+    useJUnitPlatform()               // 启用 JUnit 5
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
