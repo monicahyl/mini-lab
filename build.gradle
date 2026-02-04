@@ -17,6 +17,10 @@ dependencies {
     // JUnit 5 单元测试
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
 
+    // google guava
+    implementation("com.google.guava:guava:33.5.0-jre")
+
+
 }
 
 test {
