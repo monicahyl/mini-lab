@@ -17,6 +17,11 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Source: https://mvnrepository.com/artifact/org.mockito/mockito-core
+    testImplementation 'org.mockito:mockito-core:4.11.0'
+    testImplementation "com.google.truth:truth:1.4.5"
+
 }
 
 tasks.named('test') {

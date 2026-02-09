@@ -19,6 +19,8 @@ dependencies {
 
     // google guava
     implementation("com.google.guava:guava:33.5.0-jre")
+    // Truth 断言库（仅测试使用）
+    testImplementation "com.google.truth:truth:1.4.5"
 
 
 }
